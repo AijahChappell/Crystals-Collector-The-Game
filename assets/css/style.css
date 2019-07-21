@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+html {
+    background: url("../images/blueBackground.jpg") no-repeat center center fixed;
+    background-color: blue;
+    background-size: cover;
+}
+
+#main {
+    background-color: red;
+    width: 1000px;
+    height: 100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.instructions {
+    width: 400px;
+    height: 350px;
+    background-color: antiquewhite;
+    color: teal;
+    font-size: 16px;
+    padding: 10px;
+    margin-left: 15px;
+}
+
+#scores {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.randomNumber, .winsLosses {
+    float: left;
+    width: 20%;
+    margin-top: 15px;
+    padding-left: 15px;
+    margin-left: 15px;
+}
+
+.winsLosses {
+    background-color: skyblue;
+    color: black;
+    margin-top: 15px;
+    margin-left: 325;
+    max-width: 100px;
+}
+
+.randomNumber {
+    height: 60px;
+    background-color: darkturquoise;
+    color: whitesmoke;
+}
+
+.totalScore {
+    width: 20%;
+    height: 90px;
+    background-color: bisque;
+    margin-left: 15px;
+    padding-left: 10px;
+}
+
+footer {
+    background: navy;
+    clear: both;
+    text-align: center;
+    font-size: 30px;
+    color: #444444;
+    margin-top: 15px;
+}

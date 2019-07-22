@@ -8,47 +8,62 @@ body {
 
 html {
     background: url("../images/blueBackground.jpg") no-repeat center center fixed;
-    background-color: blue;
     background-size: cover;
-    overflow: display;
+    color:white;
 }
 
 p {
     text-align: center;
     margin: 25px;
     font-size: 20px;
+    color: black;
 }
 
 .paragraph {
     text-align: center;
     align-content: center;
-    color: black;
 }
 
 #scoreScreen {
     margin: 20px;
+    color: white;
 } 
 
-#randomNumber, #win, #lose {
+#randomNumber {
     font-size: 27px;
+    color: whitesmoke;
 }
 
-#PointsToMatch, #wins, #losses {
+#win {
+    font-size: 27px;
+    color: whitesmoke;
+}
+
+#lose {
+    font-size: 27px;
+    color: whitesmoke;
+}
+
+#PointsToMatch {
     font-size: 30px;
+    color: white;
 }
 
 #wins {
+    font-size: 30px;
     color: green;
 }
 
 #losses {
+    font-size: 30px;
     color: red;
 }
 
 #totalScore {
     font-size: 30px;
     text-align: center;
-    margin-top: 30px; 
+    margin-top: 30px;
+    color: white;
 }
 
 #score {
@@ -56,6 +71,7 @@ p {
     margin-top: 20px;
     font-size: 30px;
     padding-bottom: 30px;
+    color: white;
 }
 
 
@@ -64,10 +80,11 @@ p {
     font-size: 24px;
     font-weight: bold;
     text-align: center;
+    color: white;
 }
 
 #instructions {
-    background-color: #ffffff;
+    background-color: whitesmoke;
     border-radius: 45px;
     padding: 10px;
 }
@@ -82,6 +99,6 @@ footer {
     clear: both;
     text-align: center;
     font-size: 30px;
-    color: whitesmoke;
+    color: white;
     margin-top: 15px;
 }

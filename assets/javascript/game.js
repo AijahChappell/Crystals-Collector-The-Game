@@ -1,7 +1,8 @@
 $(document).ready(function() {
-    var wins = 0;
+    let wins = 0;
     let losses = 0;
     let currentCrystal = 0;
+    let gameNumber = 0;
     
     let redCrystal = 0;
     let blueCrystal = 0;
@@ -18,7 +19,7 @@ $(document).ready(function() {
     };
 
     function randomNumber() {
-        let gameNumber = (Math.floor(Math.random()*100) + 21);
+        gameNumber = (Math.floor(Math.random()*100) + 21);
         $("#PointsToMatch").append(gameNumber);
     };
 
@@ -66,4 +67,23 @@ $(document).ready(function() {
         $("#scoreScreen").append(currentCrystal);
         compareNumbers();
     });
+
+    function compareNumbers() {
+        if(currentCrystal === gameNumber) {
+            wins ++
+            $("#wins").empty();
+            $("#wins").append(wins);
+            alert("Congratulations! You win!");
+            newGame();
+        } else if (currentCrystal > gameNumber) {
+            losses ++
+            $("#losses").empty();
+            $("#losses").append(losses);
+            alert("You lost. Try again!");
+            newGame();
+        }
+    };
+
+    newGame();
+
 });

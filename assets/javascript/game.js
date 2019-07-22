@@ -39,5 +39,31 @@ $(document).ready(function() {
         };
     };
 
-    
+    $(".redCrystal").on("click", function() {
+        currentCrystal += redCrystal;
+        $("#scoreScreen").empty();
+        $("#scoreScreen").append(currentCrystal);
+        compareNumbers();
+    });
+
+    $(".blueCrystal").on("click", function() {
+        currentCrystal += blueCrystal;
+        $("#scoreScreen").empty();
+        $("#scoreScreen").append(currentCrystal);
+        compareNumbers();
+    });
+
+    $(".yellowCrystal").on("click", function() {
+        currentCrystal += yellowCrystal;
+        $("#scoreScreen").empty();
+        $("#scoreScreen").append(currentCrystal);
+        compareNumbers();
+    });
+
+    $(".greenCrystal").on("click", function() {
+        currentCrystal += greenCrystal;
+        $("#scoreScreen").empty();
+        $("#scoreScreen").append(currentCrystal);
+        compareNumbers();
+    });
 });

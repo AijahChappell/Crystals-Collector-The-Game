@@ -1,31 +1,64 @@
 body {
+    background: url("../images/blueBackground.jpg") no-repeat center center fixed;
+    background-size: cover;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
+    color: whitesmoke;
 }
 
 html {
     background: url("../images/blueBackground.jpg") no-repeat center center fixed;
     background-color: blue;
     background-size: cover;
+    overflow: display;
 }
 
-#main {
-    background-color: red;
-    width: 1000px;
-    height: 100px;
-    margin: 0 auto;
+p {
     text-align: center;
+    margin: 25px;
+    font-size: 20px;
 }
 
-.instructions {
-    width: 400px;
-    height: 350px;
-    background-color: antiquewhite;
-    color: teal;
-    font-size: 16px;
-    padding: 10px;
-    margin-left: 15px;
+.paragraph {
+    text-align: center;
+    align-content: center;
+    color: black;
 }
+
+#scoreScreen {
+    margin: 20px;
+} 
+
+#randomNumber, #win, #lose {
+    font-size: 27px;
+}
+
+#PointsToMatch, #wins, #losses {
+    font-size: 30px;
+}
+
+#wins {
+    color: green;
+}
+
+#losses {
+    color: red;
+}
+
+#totalScore {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 30px; 
+}
+
+#score {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 30px;
+    padding-bottom: 30px;
+}
+
+
 
 #scores {
     font-size: 24px;
@@ -33,34 +66,15 @@ html {
     text-align: center;
 }
 
-.randomNumber, .winsLosses {
-    float: left;
-    width: 20%;
-    margin-top: 15px;
-    padding-left: 15px;
-    margin-left: 15px;
+#instructions {
+    background-color: #ffffff;
+    border-radius: 45px;
+    padding: 10px;
 }
 
-.winsLosses {
-    background-color: skyblue;
-    color: black;
-    margin-top: 15px;
-    margin-left: 325;
-    max-width: 100px;
-}
-
-.randomNumber {
-    height: 60px;
-    background-color: darkturquoise;
-    color: whitesmoke;
-}
-
-.totalScore {
-    width: 20%;
-    height: 90px;
-    background-color: bisque;
-    margin-left: 15px;
-    padding-left: 10px;
+button {
+    background: none;
+    border: none;
 }
 
 footer {
@@ -68,6 +82,6 @@ footer {
     clear: both;
     text-align: center;
     font-size: 30px;
-    color: #444444;
+    color: whitesmoke;
     margin-top: 15px;
 }

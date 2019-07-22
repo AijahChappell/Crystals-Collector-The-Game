@@ -8,47 +8,49 @@
 
     <title>CrystalsCollector Game</title>
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.4.1.js"
         integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
-        <header id="main">
-            <div class="pageHeader">
-                <h1>Crystals Collector- The Game!</h1>
-            </div>
-        </header>
-
-        <div class="instructions">
-            <p>The random number assigned below is your goal.</p>
-            <p>By clicking on one of the four crystals below you will add points to your score.</p>
-            <p>You win the game by matching the Points to Match. You lose if you go over this number.</p>
-            <p>The value of each crystal will be hidden until you click on it.</p>
-            <p>The values of the crystals will change when you start a new game. Good luck!</p>
+    <header id="main">
+        <div class="pageHeader">
+            <h1>Crystals Collector- The Game!</h1>
         </div>
+    </header>
 
-        <div class="randomNumber">
-            <h3>Points to Match: <span id="PointsToMatch"></span></h3>Points to Match: </h3>
-        </div>
+    <div class="instructions">
+        <p>The random number assigned below is your goal.</p>
+        <p>By clicking on one of the four crystals below you will add points to your score.</p>
+        <p>You win the game by matching the Points to Match. You lose if you go over this number.</p>
+        <p>The value of each crystal will be hidden until you click on it.</p>
+        <p>The values of the crystals will change when you start a new game. Good luck!</p>
+    </div>
 
-        <div class="winsLosses">
-            <h3>Wins: <span id="wins"></span></h3>
-            <h3>Losses: <span id="losses"></span></h3>
-        </div>
+    <div class="randomNumber">
+        <h3>Points to Match: <span id="PointsToMatch"></span></h3>Points to Match: </h3>
+    </div>
 
-        <div id="crystal">
-        </div>
+    <div class="winsLosses">
+        <h3>Wins: <span id="wins"></span></h3>
+        <h3>Losses: <span id="losses"></span></h3>
+    </div>
 
-        <div class="totalScore">
-            <h3>Your total score is: </h3>
-            <div id="scores"></div>
-        </div>
+    <div id="crystal">
+    </div>
 
-        <footer>
-            <p>&copy;Copyright 2019 Aijah Chappell</p>
-        </footer>
-       
+    <div class="totalScore">
+        <h3>Your total score is: </h3>
+        <div id="scores"></div>
+    </div>
+
+    <footer>
+        <p>&copy;Copyright 2019 Aijah Chappell</p>
+    </footer>
+
 </body>
 
 </html>

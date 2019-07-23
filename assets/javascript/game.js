@@ -9,6 +9,19 @@ $(document).ready(function() {
     let greenCrystal = 0;
     let yellowCrystal = 0;
 
+    $("#title").html("Crystals Collector- The Game!");
+    $("#paraOne").html("The random number assigned below is your goal. By clicking on one of the four crystals below you will add points to your score.");
+    $("#paraTwo").html("You win the game by matching the Points to Match. You lose if you go over this number. The value of each crystal will be hidden until you click on it. The values of the crystals will change when you start a new game. Good luck!")
+    $("#spanScore").html("Your total score is: ");
+    $(".redCrystal").html("<img src='./assets/images/redcrystal.jpg' width='100px' height='100px' alt='red crystal'>");
+    $(".blueCrystal").html("<img src='./assets/images/bluecrystal.jpg' width='100px' height='100px' alt='blue crystal'>");
+    $(".greenCrystal").html("<img src='./assets/images/greencrystal.jpg' width='100px' height='100px' alt='green crystal'>");
+    $(".yellowCrystal").html("<img src='./assets/images/yellowcrystal.jpg' width='100px' height='100px' alt='yellow crystal'>");
+    $("#randomNumber").html("Points to Match: ");
+    $("#win").html("Wins: ");
+    $("#lose").html("Losses: ");
+    $("#foot").html("&copy;Copyright 2019 Aijah Chappell");
+
     function newGame() {
         $("#PointsToMatch").empty();
         randomNumber();

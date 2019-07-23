@@ -23,7 +23,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-12 text-center">
-                <h1>Crystals Collector- The Game!</h1>
+                <h1 id="title"></h1>
             </div>
         </div>
 
@@ -31,41 +31,38 @@
         <div class="row paragraph">
             <div class="col-md-2"></div>
             <div class="col-md-8 text-center justify-content-center" id="instructions">
-                <p>The random number assigned below is your goal.
-                    By clicking on one of the four crystals below you will add points to your score.</p>
-                <p>You win the game by matching the Points to Match. You lose if you go over this number.
-                    The value of each crystal will be hidden until you click on it.
-                    The values of the crystals will change when you start a new game. Good luck!</p>
+                <p id="paraOne"></p>
+                <p id="paraTwo"></p>
             </div>
             <div class="col-md-2"></div>
         </div>
 
-        <div id="totalScore">Your total score is: </div>
+        <div id="totalScore"><span id="spanScore"></span></div>
 
         <div id="score"></div>
 
         <div class="row justify-content-center" id="crystals">
-            <div class="col-sm-6 col-md-3 text center">
+            <div class="col-sm-6 col-md-3 text-center">
                 <button class="redCrystal">
-                    <img src="./assets/images/redcrystal.jpg" width="100px" height="100px" alt="red crystal">
+
                 </button>
             </div>
 
-            <div class="col-sm-6 col-md-3 text center">
+            <div class="col-sm-6 col-md-3 text-center">
                 <button class="blueCrystal">
-                    <img src="./assets/images/bluecrystal.jpg" width="100px" height="100px" alt="red crystal">
+
                 </button>
             </div>
 
-            <div class="col-sm-6 col-md-3 text center">
+            <div class="col-sm-6 col-md-3 text-center">
                 <button class="greenCrystal">
-                    <img src="./assets/images/greencrystal.jpg" width="100px" height="100px" alt="red crystal">
+
                 </button>
             </div>
 
-            <div class="col-sm-6 col-md-3 text center">
+            <div class="col-sm-6 col-md-3 text-center">
                 <button class="yellowCrystal">
-                    <img src="./assets/images/yellowcrystal.jpg" width="100px" height="100px" alt="red crystal">
+
                 </button>
             </div>
 
@@ -73,9 +70,9 @@
 
         <div class="row justify-content-center text-center" id="scoreScreen">
             <div class="col-md-3"></div>
-            <div class="col-md-2 text-center" id="randomNumber">Points to Match: </div>
-            <div class="col-md-2 text-center" id="win">Wins: </div>
-            <div class="col-md-2 text-center" id="lose">Losses: </div>
+            <div class="col-md-2 text-center" id="randomNumber"></div>
+            <div class="col-md-2 text-center" id="win"></div>
+            <div class="col-md-2 text-center" id="lose"></div>
             <div class="col-md-3"></div>
         </div>
 
@@ -89,7 +86,7 @@
     </div>
 
     <footer>
-        <p id="foot">&copy;Copyright 2019 Aijah Chappell</p>
+        <p id="foot"></p>
     </footer>
 
 </body>

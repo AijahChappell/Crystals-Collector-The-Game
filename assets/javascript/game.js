@@ -14,13 +14,12 @@ $(document).ready(function() {
         randomNumber();
         currentCrystal = 0;
         randomCrystalNumber();
-        $("#scoreScreen").empty();
-        $("#scoreScreen").append(currentCrystal);
+        $("#score").html(currentCrystal);
     };
 
     function randomNumber() {
         gameNumber = (Math.floor(Math.random()*100) + 21);
-        $("#PointsToMatch").append(gameNumber);
+        $("#PointsToMatch").html(gameNumber);
     };
 
     function randomCrystalNumber() {
@@ -42,43 +41,37 @@ $(document).ready(function() {
 
     $(".redCrystal").on("click", function() {
         currentCrystal += redCrystal;
-        $("#scoreScreen").empty();
-        $("#scoreScreen").append(currentCrystal);
+        $("#score").html(currentCrystal);
         compareNumbers();
     });
 
     $(".blueCrystal").on("click", function() {
         currentCrystal += blueCrystal;
-        $("#scoreScreen").empty();
-        $("#scoreScreen").append(currentCrystal);
+        $("#score").html(currentCrystal);
         compareNumbers();
     });
 
     $(".yellowCrystal").on("click", function() {
         currentCrystal += yellowCrystal;
-        $("#scoreScreen").empty();
-        $("#scoreScreen").append(currentCrystal);
+        $("#score").html(currentCrystal);
         compareNumbers();
     });
-
+ 
     $(".greenCrystal").on("click", function() {
         currentCrystal += greenCrystal;
-        $("#scoreScreen").empty();
-        $("#scoreScreen").append(currentCrystal);
+        $("#score").html(currentCrystal);
         compareNumbers();
     });
 
     function compareNumbers() {
         if(currentCrystal === gameNumber) {
             wins ++
-            $("#wins").empty();
-            $("#wins").append(wins);
+            $("#wins").html(wins);
             alert("Congratulations! You win!");
             newGame();
         } else if (currentCrystal > gameNumber) {
             losses ++
-            $("#losses").empty();
-            $("#losses").append(losses);
+            $("#losses").html(losses);
             alert("You lost. Try again!");
             newGame();
         }

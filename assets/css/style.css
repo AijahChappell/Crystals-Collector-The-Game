@@ -71,16 +71,6 @@ p {
     margin-top: 20px;
     font-size: 30px;
     padding-bottom: 30px;
-    color: white;
-}
-
-
-
-#scores {
-    font-size: 24px;
-    font-weight: bold;
-    text-align: center;
-    color: white;
 }
 
 #instructions {
@@ -94,7 +84,7 @@ button {
     border: none;
 }
 
-footer {
+#foot {
     background: navy;
     clear: both;
     text-align: center;
